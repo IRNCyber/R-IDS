@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ids-core",
+    "crates/ids-capture",
+    "crates/ids-engine",
+    "crates/ids-storage",
+    "crates/ids-api",
+    "crates/ids-tui",
+    "crates/ids-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.80"
+
+[workspace.dependencies]
+anyhow = "=1.0.100"
+clap = { version = "=4.5.53", features = ["derive"] }
+serde = { version = "=1.0.228", features = ["derive"] }
+toml = "=0.9.8"
+tracing = "=0.1.41"
+tracing-subscriber = { version = "=0.3.20", features = ["env-filter", "fmt"] }
+axum = "=0.8.9"
+tokio = { version = "=1.54.1", features = ["macros", "net", "rt-multi-thread", "sync"] }
+tower-http = { version = "=0.7.1", features = ["trace"] }
+pcap = "=2.5.0"
+

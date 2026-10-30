@@ -1,0 +1,20 @@
+# Rust build output
+/target/
+
+# Node and Vite output
+/web/node_modules/
+/web/dist/
+/web/tsconfig.tsbuildinfo
+
+# Local configuration and secrets
+/config.toml
+/.env
+/.env.*
+!/web/.env.example
+/web/.env.local
+/web/.env.*.local
+
+# IDE and operating-system files
+/.idea/
+.DS_Store
+Thumbs.db
